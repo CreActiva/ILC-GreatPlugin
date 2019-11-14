@@ -1,9 +1,8 @@
 <?php
-defined ('ABSPATH') or die ('¡No HACKS Man!');
 /*Queues*/
 function general_css_js() {
-	$direction[0] = '/great/public/css/bundle.css';
-	$direction[1] = '/great/public/css/bundle.js';
+	$direction[0] = '/Great/public/css/bundle.css';
+	$direction[1] = '/Great/public/css/bundle.js';
 	/* JS BUNDLE */
    $handle = 'BundleJS';
  	$src = plugins_url().$direction[1];
@@ -18,7 +17,7 @@ function general_css_js() {
 	/* ========== */
 }
 /*======*/
-dd_filter( 'template_include', 'queues', 999 );
+add_filter( 'template_include', 'queues', 999 );
 function queues( $template ) {
    if(is_page_template( 'great/view/great.php' )){
    	/* Activar queue */
