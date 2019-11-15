@@ -20,7 +20,7 @@ class PageTemplater {
       add_filter( 'wp_insert_post_data', array( $this, 'register_project_templates' ));
       add_filter('template_include',array( $this, 'view_project_template' ) );
       $this->templates = array(
-         'view/great.php' => 'Great',
+         '../view/great.php' => 'Great',
       );
    }
    public function add_new_template( $posts_templates ) {

@@ -1,5 +1,6 @@
 <?php
 defined ('ABSPATH') or die ('¡No HACKS Man!');
+get_header();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -144,5 +145,5 @@ defined ('ABSPATH') or die ('¡No HACKS Man!');
 		</div>
 	</div>
 </section>
-</body>
-</html>
+<?php
+get_footer();

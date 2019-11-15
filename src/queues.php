@@ -1,4 +1,5 @@
 <?php
+defined ('ABSPATH') or die ('¡No HACKS Man!');
 /*Queues*/
 function general_css_js() {
 	$direction[0] = '/Great/public/css/bundle.css';
@@ -19,13 +20,13 @@ function general_css_js() {
 /*======*/
 add_filter( 'template_include', 'queues', 999 );
 function queues( $template ) {
-   if(is_page_template( 'great/view/great.php' )){
+   if(is_page_template( '../view/great.php' )){
    	/* Activar queue */
       add_action('wp_enqueue_scripts','general_css_js');
       general_css_js();
    	/* ============= */
       /* Dequeue general */
-      vadd_action('wp_enqueue_scripts','dequeue_default');
+      add_action('wp_enqueue_scripts','dequeue_default');
       function dequeue_default(){
          global $wp_styles;
          $wp_styles->queue = array('BundleJS');
