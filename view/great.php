@@ -1,25 +1,9 @@
 <?php
 defined ('ABSPATH') or die ('¡No HACKS Man!');
-get_header();
+print_r(wp_print_scripts());
+print_r(wp_print_styles());
+get_header('sleek');
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="logo/ilc-logo.webp" alt="favicon">
-	<title>GREAT - ILC Academy</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap" rel="stylesheet">
-	<!-- SEO -->
-	<meta name="robots" content="index, follow">
-	<meta http-equiv="X-UA-Compatible" content="IE=7">
-	<meta name="description" content="Inicia una conversación libre con la intención de conocerte y reconocer cual es la chispa que tienes dentro.">
-	<meta name="keywords" content="Great, GREAT, Coaching, ILC Academy, ILC Campus, Life Coach, IAC, Fernando Celis">
-	<meta name="author" content="ILC Academy">
-	<!-- === -->
-</head>
-<body>
-
 <section id="s1" class="buceo parallax py-5 text-light">
 	<div class="container">
 		<div class="row">
@@ -50,10 +34,10 @@ get_header();
 			<h1 class="font-italic text-center programa"  data-aos="fade-zoom-in" data-aos-duration="1500">Pasión, Vida, Coaching</h1>
 		</div>
 		<div class="col-md-7 pb-md-0 pb-5">
-			<img src="../public/img/mockup.webp" alt="Mockup" data-aos="fade-zoom-in" data-aos-duration="1500">
+			<img src="<?php echo plugins_url().'/Great/public/img/mockup.webp'; ?>" alt="Mockup" data-aos="fade-zoom-in" data-aos-duration="1500">
 		</div>
 		<div class="col-md-5">
-			<img src="../public/img/great.webp" alt="Great Logo" class="pb-5"  data-aos="fade-zoom-in" data-aos-duration="1500">
+			<img src="<?php echo plugins_url().'Great/public/img/great.webp'; ?>" alt="Great Logo" class="pb-5"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			<p class="text-md-left" data-aos="fade-zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae enim officiis molestias hic doloribus dolorum! Commodi possimus, nostrum cupiditate labore voluptatibus ab laudantium veritatis sed, iusto dolore, similique ut! Nesciunt?</p>
 		</div>
 	</div>
@@ -74,7 +58,7 @@ get_header();
 				<h1>Elige tu Coach</h1>
 			</div>
 			<div class="col-md-5 pb-md-0 pb-5">
-				<img src="../public/img/equipo.webp" alt="Equipo"  data-aos="fade-zoom-in" data-aos-duration="1500">
+				<img src="<?php echo plugins_url().'/Great/public/img/equipo.webp'; ?>" alt="Equipo"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			</div>
 			<div class="col-md-7" >
 				<h1>Fernando Celis</h1>
@@ -106,7 +90,7 @@ get_header();
 				</p>
 			</div>
 			<div class="col-md-3">
-				<img src="../public/img/fernando.webp" alt="Fernando" style="visibility: hidden;"> <!-- oculto -->
+				<img src="<?php echo plugins_url().'/Great/public/img/fernando.webp'; ?>" alt="Fernando" style="visibility: hidden;"> <!-- oculto -->
 			</div>
 		</div>
 	</div>
@@ -139,11 +123,11 @@ get_header();
 <section id="s8" class="bg-info py-5">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-md-4 pb-md-0 pb-5"><img src="../public/logo/ilc-logo.webp" alt="ILC Academy Logo" data-aos="fade-zoom-in" data-aos-duration="1500"></div>
-			<div class="col-md-4 pb-md-0 pb-5 align-self-center"><img src="../public/logo/iac-logo.webp" alt="IAC Logo" data-aos="fade-zoom-in" data-aos-duration="2000"></div>
-			<div class="col-md-4"><img src="../public/logo/lizard-logo.webp" alt="Fernando Lizard Logo" data-aos="fade-zoom-in" data-aos-duration="2500"></div>
+			<div class="col-md-4 pb-md-0 pb-5"><img src="<?php echo plugins_url().'/Great/public/logo/ilc-logo.webp'; ?>" alt="ILC Academy Logo" data-aos="fade-zoom-in" data-aos-duration="1500"></div>
+			<div class="col-md-4 pb-md-0 pb-5 align-self-center"><img src="<?php echo plugins_url().'/Great/public/logo/iac-logo.webp'; ?>" alt="IAC Logo" data-aos="fade-zoom-in" data-aos-duration="2000"></div>
+			<div class="col-md-4"><img src="<?php echo plugins_url(); ?>/Great/public/logo/lizard-logo.webp" alt="Fernando Lizard Logo" data-aos="fade-zoom-in" data-aos-duration="2500"></div>
 		</div>
 	</div>
 </section>
 <?php
-get_footer();
+get_footer('sleek');
