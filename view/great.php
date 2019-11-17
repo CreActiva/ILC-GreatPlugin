@@ -2,6 +2,8 @@
 defined ('ABSPATH') or die ('¡No HACKS Man!');
 print_r(wp_print_scripts());
 print_r(wp_print_styles());
+// global $wp_styles;
+// print_r($wp_styles->registered);
 get_header('sleek');
 ?>
 <section id="s1" class="buceo parallax py-5 text-light">
@@ -37,7 +39,7 @@ get_header('sleek');
 			<img src="<?php echo plugins_url().'/Great/public/img/mockup.webp'; ?>" alt="Mockup" data-aos="fade-zoom-in" data-aos-duration="1500">
 		</div>
 		<div class="col-md-5">
-			<img src="<?php echo plugins_url().'Great/public/img/great.webp'; ?>" alt="Great Logo" class="pb-5"  data-aos="fade-zoom-in" data-aos-duration="1500">
+			<img src="<?php echo plugins_url().'/Great/public/img/great.webp'; ?>" alt="Great Logo" class="pb-5"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			<p class="text-md-left" data-aos="fade-zoom-in" data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae enim officiis molestias hic doloribus dolorum! Commodi possimus, nostrum cupiditate labore voluptatibus ab laudantium veritatis sed, iusto dolore, similique ut! Nesciunt?</p>
 		</div>
 	</div>
@@ -69,15 +71,17 @@ get_header('sleek');
 
 	</div>
 </section>
-<section id="s5" class="container text-center justify-content-center">
-	<div class="row">
+<section id="s5" class="container py-5 text-center">
+	<div class="row justify-content-center">
 		<div class="col-md-12">
-			<h1 class="py-5">Elige tu cita</h1>
+			<h1 class="pb-5">Elige tu cita</h1>
 		</div>
-		<div class="col-md-8 vh-100" data-aos="fade-zoom-in" data-aos-duration="1500">
+		<div class="col-md-8"  data-aos-duration="1500">
 			<!-- Hook de booked -->
+			<?php 
+				echo do_shortcode('[bookly-form category_id="0" service_id="1" staff_member_id="1" hide="categories"]');
+			?>
 		</div>
-
 	</div>
 </section>
 <section id="s6" class="bg-info py-5 text-light text-center bg-fernando">
@@ -130,4 +134,4 @@ get_header('sleek');
 	</div>
 </section>
 <?php
-get_footer('sleek');
+get_footer('bottom');
