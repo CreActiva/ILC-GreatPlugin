@@ -1,10 +1,25 @@
 <?php
 defined ('ABSPATH') or die ('¡No HACKS Man!');
 /*Queues*/
+function dequeue_jquery_migrate( $scripts ) {
+   if ( ! is_admin() && ! empty( $scripts->registered['jquery'] ) ) {
+       $scripts->registered['jquery']->deps = array_diff(
+           $scripts->registered['jquery']->deps,
+           [ 'jquery-migrate' ]
+       );
+   }
+}
+add_action( 'wp_default_scripts', 'dequeue_jquery_migrate' );
 function general_css_js() {
 	$direction[0] = '/Great/public/css/bundle.css';
    $direction[1] = '/Great/public/js/bundle.js';
+
    /* JS BUNDLE */
+   wp_deregister_script( 'jquery-core' );
+   wp_deregister_script( 'jquery-migrate' );
+   wp_deregister_script( 'jquery' );
+   wp_register_script( 'jquery', "https://code.jquery.com/jquery-3.3.1.min.js", array(), '3.4.1',  true);
+   wp_enqueue_script( 'jquery' );
    $deps = array('jquery');
    $handle = 'BundleJS';
  	$src = plugins_url().$direction[1];
@@ -13,9 +28,13 @@ function general_css_js() {
 
    $handleJs = 'bootstrap-js';
    $srcJs = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' ;
-   wp_register_script( $handleJs, $srcJs,$deps, false, true); 
+   wp_register_script( $handleJs, $srcJs,array('jquery','popper'), false, true); 
    wp_enqueue_script( $handleJs );  
    
+   $handleJs = 'aos-js';
+   $srcJs = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+   wp_register_script( $handleJs, $srcJs,$deps, false, true); 
+   wp_enqueue_script( $handleJs );  
 	/* ========== */
 	/* CSS BUNDLE */
    $handle = 'BundleCSS';
@@ -31,36 +50,6 @@ function queues( $template ) {
       /* Activar queue */
       add_action('wp_enqueue_scripts', 'general_css_js');
       general_css_js();
-
-    //   /* Dequeue general */
-    //   add_action('wp_enqueue_scripts','dequeue_default');
-    //   function dequeue_default(){
-    //      global $wp_styles;
-    //      $wp_styles->queue = array('BundleCSS','admin-bar');
-    //      global $wp_scripts;
-    //      $wp_scripts->queue = array('BundleJS','admin-bar');
-    //      Array ( [0] => dashicons [1] => admin-bar [2] => BundleCSS [3] => wplms_mycred )
-    //   }
-    //   /* Dequeue general */
-      //   add_action('wp_enqueue_scripts', 'remove_default_styles');
-      //   function remove_default_styles () {
-      //     // get all styles data
-      //     global $wp_styles;
-      //     // loop over all of the registered scripts
-      //     foreach ($wp_styles->registered as $handle => $data) {
-      //        // remove it
-      //        wp_deregister_style($handle);
-      //        wp_dequeue_style($handle);
-      //     }
-      //     // https://gelwp.com/articles/removing-all-enqueued-and-default-css-scripts-in-wordpress/
-      //     wp_dequeue_style( 'default-css' );
-      //     wp_dequeue_script( 'default-js' );
-      //    //  https://wplearner.org/faq/question/remove-javascript-css/
-   //       $wp_styles->queue = array('BundleCSS','admin-bar');
-   //       global $wp_scripts;
-   //  //    $wp_scripts->queue = array('BundleJS','admin-bar');
-      //  }
-
    }
    return $template;
 }
