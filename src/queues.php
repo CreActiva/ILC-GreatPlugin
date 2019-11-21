@@ -1,5 +1,18 @@
 <?php
 defined ('ABSPATH') or die ('¡No HACKS Man!');
+
+/* Evitar el uso de jQuery Migrate */
+function dequeue_jquery_migrate( $scripts ) {
+   if ( ! is_admin() && ! empty( $scripts->registered['jquery'] ) ) {
+         $scripts->registered['jquery']->deps = array_diff(
+            $scripts->registered['jquery']->deps,
+            [ 'jquery-migrate' ]
+         );
+   }
+}
+add_action( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+/* =============================== */
+
 /*Queues*/
 function general_css_js() {
 	$direction[0] = '/Great/public/css/bundle.css';
@@ -8,7 +21,7 @@ function general_css_js() {
    $handleJs = 'jQuery';
    //$srcJs = plugins_url().'/templates-great/templates/js/jquery-3.3.1.min.js';
    $srcJs = 'https://code.jquery.com/jquery-3.4.1.min.js';
-   wp_register_script( $handleJs, $srcJs,array(),'3.3.1');
+   wp_register_script( $handleJs, $srcJs,array(),'3.4.1');
 
    $deps = array('jQuery');
    $handle = 'BundleJS';
@@ -18,7 +31,7 @@ function general_css_js() {
 
    $handleJs = 'bootstrap-js';
    $srcJs = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' ;
-   wp_register_script( $handleJs, $srcJs,array('jquery','popper'), false, true); 
+   wp_register_script( $handleJs, $srcJs,array('jQuery','popper'), false, true); 
    wp_enqueue_script( $handleJs );  
    
 	/* CSS BUNDLE */
@@ -34,19 +47,7 @@ function queues( $template ) {
    if(is_page_template( '../view/great.php' )){
       /* Activar queue */
       add_action('wp_enqueue_scripts', 'general_css_js');
-      general_css_js();
       /* ============= */
-      /* Evitar el uso de jQuery Migrate */
-      add_action( 'wp_default_scripts', 'dequeue_jquery_migrate' );
-      function dequeue_jquery_migrate( $scripts ) {
-         if ( ! is_admin() && ! empty( $scripts->registered['jquery'] ) ) {
-             $scripts->registered['jquery']->deps = array_diff(
-                 $scripts->registered['jquery']->deps,
-                 [ 'jquery-migrate' ]
-             );
-         }
-      }
-      /* =============================== */
    }
    return $template;
 }
