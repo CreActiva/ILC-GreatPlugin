@@ -4,7 +4,6 @@ defined ('ABSPATH') or die ('¡No HACKS Man!');
 // global $wp_styles;
 // print_r($wp_styles->registered);
 get_header('sleek');
-wp_print_scripts();
 wp_print_styles();
 ?>
 <section id="s1" class="buceo parallax py-5 text-light">
@@ -75,7 +74,7 @@ wp_print_styles();
 <section id="s5" class="container py-5 text-center">
 	<div class="row justify-content-center">
 		<div class="col-md-12">
-			<h1 class="pb-5">Elige tu cita</h1>
+			<h1 class="pb-5">Agenda tu primera cita GREAT GRATIS</h1>
 		</div>
 		<div class="col-md-8"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			<!-- Hook de booked -->
@@ -135,9 +134,11 @@ wp_print_styles();
 		</div>
 	</div>
 </section>
+<?php 
+wp_print_scripts();
+?>
 <script>
   	AOS.init();
 </script>
 <?php
-
 get_footer('bottom');
