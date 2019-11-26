@@ -4,10 +4,10 @@ defined ('ABSPATH') or die ('¡No HACKS Man!');
 /* Evitar el uso de jQuery Migrate */
 function dequeue_jquery_migrate( $scripts ) {
    if ( ! is_admin() && ! empty( $scripts->registered['jquery'] ) ) {
-         $scripts->registered['jquery']->deps = array_diff(
-            $scripts->registered['jquery']->deps,
-            [ 'jquery-migrate' ]
-         );
+      $scripts->registered['jquery']->deps = array_diff(
+         $scripts->registered['jquery']->deps,
+         [ 'jquery-migrate' ]
+      );
    }
 }
 add_action( 'wp_default_scripts', 'dequeue_jquery_migrate' );
@@ -21,7 +21,7 @@ function general_css_js() {
    $handleJs = 'jQuery';
    //$srcJs = plugins_url().'/templates-great/templates/js/jquery-3.3.1.min.js';
    $srcJs = 'https://code.jquery.com/jquery-3.4.1.min.js';
-   wp_register_script( $handleJs, $srcJs,array(),'3.4.1');
+   wp_register_script( $handleJs, $srcJs,array(),'3.4.1',true);
 
    $deps = array('jQuery');
    $handle = 'BundleJS';
@@ -30,9 +30,9 @@ function general_css_js() {
    wp_enqueue_script( $handle );
 
    $handleJs = 'bootstrap-js';
-   $srcJs = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' ;
-   wp_register_script( $handleJs, $srcJs,array('jQuery','popper'), false, true); 
-   wp_enqueue_script( $handleJs );  
+   $srcJs = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js';
+   wp_register_script( $handleJs, $srcJs,array('jQuery','popper'), '4.3.1', true);
+   wp_enqueue_script( $handleJs );
    
 	/* CSS BUNDLE */
    $handle = 'BundleCSS';

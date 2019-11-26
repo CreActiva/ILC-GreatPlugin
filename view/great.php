@@ -16,15 +16,15 @@ wp_print_styles();
 				<img src="<?php echo plugins_url().'/Great/public/img/great.png'; ?>" alt="Great Logo">
 			</div>
 			<div class="col-md-7">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe rel="nofollow noopener noreferrer" class="embed-responsive-item animated fadeIn shadow-lg p-3" src="https://player.vimeo.com/video/312622321?color=4b314c&title=0&byline=0&portrait=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Great"></iframe>		
+				<div class="embed-responsive embed-responsive-16by9" style="height:auto;">
+					<iframe rel="nofollow noopener noreferrer" class="embed-responsive-item animated fadeIn shadow-lg p-3" src="https://player.vimeo.com/video/297692738?color=4b314c&title=0&byline=0&portrait=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Great"></iframe>		
 				</div>
 				<div class="text-center py-5 animated fadeIn">
 					<p class="pb-5">Estamos entrando en un paradigma de vida donde el mundo se transforma y cambia más rápido de lo que hemos conocido antes. Hoy mas que nunca, entender como es que operamos, y cómo salir de estados estancados para operar desde un máximo nivel de desempeño para avanzar hacia una vida extraordinaria. Bienvenido a tu próximo nivel, bienvenido a GREAT Coaching.</p>
-					<a href="https://ilccampus.com/producto/great/" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Comienza ahora</a>
+<!-- 					<a href="https://ilccampus.com/producto/great/" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Comienza ahora</a>
 					<br class="d-lg-none d-block">
 					<span class="px-5">o</span>
-					<br class="d-lg-none d-block">
+					<br class="d-lg-none d-block"> -->
 					<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Elige tu coach</a>
 				</div>
 			</div>
@@ -110,11 +110,11 @@ wp_print_styles();
 					<li>6 Video lecciones que acompañan tu viaje.</li>
 					<li>Material adicional, hojas de trabajo para tu plan de vida.</li>
 					<li>Una sesión personal con Fernando para evaluar tu GRAN MAPA.</li>
-				</ul>	
+				</ul>	<!-- 
 				<a href="https://ilccampus.com/producto/great/" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Comienza ahora</a>
 				<br class="d-xl-none d-block">
 				<span class="px-5">o</span>
-				<br class="d-xl-none d-block">
+				<br class="d-xl-none d-block"> -->
 				<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Elige tu coach</a>
 			</div>
 		<div class="col-md-6 bg-conferencia text-light px-0">
@@ -134,7 +134,7 @@ wp_print_styles();
 		</div>
 	</div>
 </section>
-<?php 
+<?php
 wp_print_scripts();
 ?>
 <script>

@@ -3,14 +3,13 @@
 var pluginUrl = 'https://ilccampus.com/wp-content/plugins/Great/public/';   
 /*Carrousel de videos*/
 var sliderInfo = [
-    { imgSrc: `${pluginUrl}img/`, img: '', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
-    { imgSrc: `${pluginUrl}img/`, img: '', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
-    { imgSrc: `${pluginUrl}img/`, img: '', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
-    { imgSrc: `${pluginUrl}img/`, img: '', content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloribus suscipit tempora harum veritatis minima porro, facere voluptas officiis dolores dolore deleniti dolorum. Laudantium, eligendi. Ab recusandae, dicta corporis odit.'},
-    { imgSrc: `${pluginUrl}img/`, img: '', content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloribus suscipit tempora harum veritatis minima porro, facere voluptas officiis dolores dolore deleniti dolorum. Laudantium, eligendi. Ab recusandae, dicta corporis odit.'},
-    { imgSrc: `${pluginUrl}img/`, img: '', content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloribus suscipit tempora harum veritatis minima porro, facere voluptas officiis dolores dolore deleniti dolorum. Laudantium, eligendi. Ab recusandae, dicta corporis odit.'},
+    { imgSrc: `${pluginUrl}img/videos/video1.webp`, img: 'Video 1', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
+    { imgSrc: `${pluginUrl}img/videos/video2.webp`, img: 'Video 2', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
+    { imgSrc: `${pluginUrl}img/videos/video3.webp`, img: 'Video 3', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
+    { imgSrc: `${pluginUrl}img/videos/video1.webp`, img: 'Video 1', content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloribus suscipit tempora harum veritatis minima porro, facere voluptas officiis dolores dolore deleniti dolorum. Laudantium, eligendi. Ab recusandae, dicta corporis odit.'},
+    { imgSrc: `${pluginUrl}img/videos/video2.webp`, img: 'Video 2', content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloribus suscipit tempora harum veritatis minima porro, facere voluptas officiis dolores dolore deleniti dolorum. Laudantium, eligendi. Ab recusandae, dicta corporis odit.'},
+    { imgSrc: `${pluginUrl}img/videos/video3.webp`, img: 'Video 3', content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloribus suscipit tempora harum veritatis minima porro, facere voluptas officiis dolores dolore deleniti dolorum. Laudantium, eligendi. Ab recusandae, dicta corporis odit.'},
 ];
-
 
 var sliderDesktop=`
 <div id="carouselControls" class="carousel slide d-md-block d-none" data-pause data-aos="fade-zoom-in" data-aos-duration="1500">
@@ -19,13 +18,13 @@ var sliderDesktop=`
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="${sliderInfo[0].imgSrc}" alt="${sliderInfo[0].img}" />
+                        <img class="mb-5" src="${sliderInfo[0].imgSrc}" alt="${sliderInfo[0].img}" />
                         <p>${sliderInfo[0].content}</p>
                     </div>`; 
                     for(var i=1; i <= 2; i++){
                     sliderDesktop +=` 
                     <div class="col-md-4"> 
-                        <img src="${sliderInfo[i].imgSrc}" alt="${sliderInfo[i].img}">
+                        <img class="mb-5" src="${sliderInfo[i].imgSrc}" alt="${sliderInfo[i].img}">
                         <p>${sliderInfo[i].content}</p>
                     </div>`;
                     }
@@ -39,7 +38,7 @@ var sliderDesktop=`
                     for(var i=3; i <=5; i++){
                         sliderDesktop +=`
                     <div class="col-md-4">
-                        <img src="${sliderInfo[i].imgSrc}" alt="${sliderInfo[i].img}">
+                        <img class="mb-5" src="${sliderInfo[i].imgSrc}" alt="${sliderInfo[i].img}">
                         <p>${sliderInfo[i].content}</p>
                     </div>`;
                     }
@@ -87,12 +86,12 @@ $('#responsiveCarrousel').append(sliderDesktop + sliderMovil);
 /*=========*/
 /*Carrousel de testimonios*/
 var testimonios = [
+    { imagen: `${pluginUrl}/img/200/alejandro-perez.webp`, nombre: 'Alejandro Peréz Bolaños', content: 'Hola soy Alejandro Peréz Bolaños y quiero comentarte que tenemos una nueva certificación con ILC Academy tengo 20 años trabajando con esta escuela como coach, he pasado por muchas escuela y creo que en ILC Academy encuentras el equilibrio para formarte como un coach integral' }, 
+    { imagen: `${pluginUrl}/img/200/jeremias-alvarez.webp`, nombre: 'Jeremías Álvarez', content: 'Los felicito a todos ustedes por estar preparándose como nuevos colegas nuestros, coaches a través de ILC, con mi amigo Fernando Celis y María Alexandra Duque' },
+    { imagen: `${pluginUrl}/img/200/damelys-naranjo.webp`, nombre: ' Damelys Naranjo', content: 'Hola soy Damelys Naranjo tuve la oportunidad y la satisfacción de disfrutar esta certificación de life coach es para mi gratificante porque es uno de mis mayores crecimiento dentro de todas las arias que me desempeño' }, 
+    { imagen: `${pluginUrl}/img/200/zaida-1.webp`, nombre: 'Zaida Márquez', content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi minima optio, aut iure natus blanditiis, tenetur perspiciatis sunt necessitatibus exercitationem maxime. Ea architecto deserunt, dolores ratione explicabo commodi maiores' }, 
     { imagen: `${pluginUrl}/img/200/ana-bolivar.webp`, nombre: 'Ana Bolívar', content: 'Mi nombre es Ana Bolívar y soy licenciada en relaciones industriales estoy aquí hoy día certificándome en Life coaching y en realidad esto me pareció una experiencia potenciadora que cualquier persona debería vivir' }, 
-    { imagen: '${pluginUrl}/img/200/jeremias-alvarez.webp', nombre: 'Jeremías Álvarez', content: 'Los felicito a todos ustedes por estar preparándose como nuevos colegas nuestros, coaches a través de ILC, con mi amigo Fernando Celis y María Alexandra Duque' },
-    { imagen: '${pluginUrl}/img/200/damelys-naranjo.webp', nombre: ' Damelys Naranjo', content: 'Hola soy Damelys Naranjo tuve la oportunidad y la satisfacción de disfrutar esta certificación de life coach es para mi gratificante porque es uno de mis mayores crecimiento dentro de todas las arias que me desempeño' }, 
-    { imagen: '${pluginUrl}/img/200/alejandro-perez.webp', nombre: 'Alejandro Peréz Bolaños', content: 'Hola soy Alejandro Peréz Bolaños y quiero comentarte que tenemos una nueva certificación con ILC Academy tengo 20 años trabajando con esta escuela como coach, he pasado por muchas escuela y creo que en ILC Academy encuentras el equilibrio para formarte como un coach integral' }, 
-    { imagen: '${pluginUrl}/img/200/zaida-1.webp', nombre: 'Zaida Márquez', content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi minima optio, aut iure natus blanditiis, tenetur perspiciatis sunt necessitatibus exercitationem maxime. Ea architecto deserunt, dolores ratione explicabo commodi maiores' }, 
-    { imagen: '${pluginUrl}/img/200/samuel.webp', nombre: 'Samuel González', content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi minima optio, aut iure natus blanditiis, tenetur perspiciatis sunt necessitatibus exercitationem maxime. Ea architecto deserunt, dolores ratione explicabo commodi maiores' },
+    { imagen: `${pluginUrl}/img/200/samuel.webp`, nombre: 'Samuel González', content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quasi minima optio, aut iure natus blanditiis, tenetur perspiciatis sunt necessitatibus exercitationem maxime. Ea architecto deserunt, dolores ratione explicabo commodi maiores' },
 ]; 
 var testimoniosHtml = `
 <div id="carouselTestimonios" class="carousel slide" data-pause> 
