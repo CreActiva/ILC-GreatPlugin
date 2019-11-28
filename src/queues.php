@@ -1,6 +1,5 @@
 <?php
 defined ('ABSPATH') or die ('¡No HACKS Man!');
-
 /* Evitar el uso de jQuery Migrate */
 function dequeue_jquery_migrate( $scripts ) {
    if ( ! is_admin() && ! empty( $scripts->registered['jquery'] ) ) {
@@ -16,12 +15,16 @@ add_action( 'wp_default_scripts', 'dequeue_jquery_migrate' );
 /*Queues*/
 function general_css_js() {
 	$direction[0] = '/Great/public/css/bundle.css';
-   $direction[1] = '/Great/public/js/bundle.js';
+   $direction[1] = '/Great/public/js/bundle.min.js';
    /* JS BUNDLE */
    $handleJs = 'jQuery';
-   //$srcJs = plugins_url().'/templates-great/templates/js/jquery-3.3.1.min.js';
    $srcJs = 'https://code.jquery.com/jquery-3.4.1.min.js';
    wp_register_script( $handleJs, $srcJs,array(),'3.4.1',true);
+   wp_add_inline_script( 'jQuery', '$.noConflict();' );
+
+   $handleJs = 'popper_js';
+   $srcJs = 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js';
+   wp_register_script( $handleJs, $srcJs, array(), '1.14.3', true); 
 
    $deps = array('jQuery');
    $handle = 'BundleJS';
@@ -31,7 +34,7 @@ function general_css_js() {
 
    $handleJs = 'bootstrap-js';
    $srcJs = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js';
-   wp_register_script( $handleJs, $srcJs,array('jQuery','popper'), '4.3.1', true);
+   wp_register_script( $handleJs, $srcJs,array('jQuery','popper_js'), '4.3.1', true);
    wp_enqueue_script( $handleJs );
    
 	/* CSS BUNDLE */
