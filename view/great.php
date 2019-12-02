@@ -138,6 +138,9 @@ wp_print_styles();
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content bg-dark">
       <div class="modal-body">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;"> 
+			<span aria-hidden="true">×</span> 
+		</button>
 	  	<div class="vimeo embed-responsive embed-responsive-16by9"> 
 		</div>
     </div>
