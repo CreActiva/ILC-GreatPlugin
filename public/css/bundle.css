@@ -15153,7 +15153,7 @@ a.carousel-control-prev {
 }
 
 .embed-responsive {
-    height: auto
+    height: 84vh;
 }
 
 .modal {
@@ -15199,4 +15199,7 @@ a.carousel-control-prev {
 
         }
     }
+}
+#s5{
+    padding-bottom: 13rem !important;
 }
