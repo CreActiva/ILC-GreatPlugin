@@ -143,6 +143,11 @@ $('#testimonioModal').on('hidden.bs.modal', function () {
     $(".modal-body .embed-responsive").html(``);
 });
 
-
+$('#testimonioModal').on('hidden.bs.modal', function () {
+    $(".modal-body .embed-responsive").html(``);
+});
+// $('#modal-cerrar').click(function(){
+// 	$('#testimonioModal').modal('hide');
+// });
 /*==============*/
 }( jQuery ) );
