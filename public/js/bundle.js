@@ -7,9 +7,9 @@ var sliderInfo = [
     { imgSrc: `${pluginUrl}img/videos/video1.webp`, img: 'Video 1', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
     { imgSrc: `${pluginUrl}img/videos/video2.webp`, img: 'Video 2', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
     { imgSrc: `${pluginUrl}img/videos/video3.webp`, img: 'Video 3', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
-    { imgSrc: `${pluginUrl}img/videos/video1.webp`, img: 'Video 1', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
-    { imgSrc: `${pluginUrl}img/videos/video2.webp`, img: 'Video 2', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
-    { imgSrc: `${pluginUrl}img/videos/video3.webp`, img: 'Video 3', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
+    { imgSrc: `${pluginUrl}img/videos/video4.webp`, img: 'Video 4', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
+    { imgSrc: `${pluginUrl}img/videos/video5.webp`, img: 'Video 5', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
+    { imgSrc: `${pluginUrl}img/videos/video6.webp`, img: 'Video 6', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
 ];
 
 var sliderDesktop=`
@@ -124,7 +124,7 @@ var testimoniosHtml = `
         testimoniosHtml += ` 
     </div>
     <a style="left:-25px;" class="carousel-control-prev" href="#carouselTestimonios" role="button" data-slide="prev"> 
-        <span style="filter: invert(0%);" cla(ss="carousel-control-prev-icon" aria-hidden="true"></span> 
+        <span style="filter: invert(0%);" class="carousel-control-prev-icon" aria-hidden="true"></span> 
         <span class="sr-only">Previous</span> 
     </a> 
     <a style="right:-25px;" class="carousel-control-next" href="#carouselTestimonios" role="button" data-slide="next"> 

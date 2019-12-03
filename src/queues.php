@@ -14,7 +14,7 @@ add_action( 'wp_default_scripts', 'dequeue_jquery_migrate' );
 
 /*Queues*/
 function general_css_js() {
-	$direction[0] = '/Great/public/css/bundle.css';
+	$direction[0] = '/Great/public/css/bundle.min.css';
    $direction[1] = '/Great/public/js/bundle.min.js';
    /* JS BUNDLE */
    $handleJs = 'jQuery';
