@@ -80,7 +80,7 @@ wp_print_styles();
 			<?php 
 				echo do_shortcode('[bookly-form category_id="0" service_id="1" hide="categories"]');
 			?>
-			<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">TE INVITAMOS A VER LAS PRIMERAS DOS VIDEO LECCIONES</a>
+			<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary m-5 btn-lg rounded-pill text-light shadow" rel="nofollow noopener noreferrer">TE INVITAMOS A VER LAS PRIMERAS DOS VIDEO LECCIONES</a>
 		</div>
 	</div>
 </section>
