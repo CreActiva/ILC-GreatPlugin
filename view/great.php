@@ -14,6 +14,8 @@ wp_print_styles();
 					Siempre<br>existe un<br>próximo<br>nivel
 				</h1>
 				<img src="<?php echo plugins_url().'/Great/public/img/great.png'; ?>" alt="Great Logo">
+				<p>6 SESIONES COMPLETAS DE GREAT™ COACHING, apoyados por 6 Video Lecciones y 2 Webinars.
+				Llenos de Poder Transformador.</p>
 			</div>
 			<div class="col-md-7">
 				<div class="embed-responsive embed-responsive-16by9" style="height:auto;">
@@ -21,11 +23,8 @@ wp_print_styles();
 				</div>
 				<div class="text-center py-5 animated fadeIn">
 					<p class="pb-5">Estamos entrando en un paradigma de vida donde el mundo se transforma y cambia más rápido de lo que hemos conocido antes. Hoy mas que nunca, entender como es que operamos, y cómo salir de estados estancados para operar desde un máximo nivel de desempeño para avanzar hacia una vida extraordinaria. Bienvenido a tu próximo nivel, bienvenido a GREAT Coaching.</p>
- 					<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Comienza ahora</a>
 					<br class="d-lg-none d-block">
-					<span class="px-5">o</span>
-					<br class="d-lg-none d-block">
-					<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Elige tu coach</a>
+					<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">COMIENZA AHORA Y ELIGE TU COACH</a>
 				</div>
 			</div>
 		</div>
@@ -74,13 +73,14 @@ wp_print_styles();
 <section id="s5" class="container py-5 text-center">
 	<div class="row justify-content-center">
 		<div class="col-md-12">
-			<h1 class="pb-5">Agenda tu primera cita GREAT GRATIS</h1>
+			<h1 class="pb-5">AGENDA TU PRIMERA SESIÓN DE COACHING GRATIS</h1>
 		</div>
 		<div class="col-md-8"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			<!-- Hook de booked -->
 			<?php 
 				echo do_shortcode('[bookly-form category_id="0" service_id="1" hide="categories"]');
 			?>
+			<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">TE INVITAMOS A VER LAS PRIMERAS DOS VIDEO LECCIONES</a>
 		</div>
 	</div>
 </section>
@@ -111,11 +111,7 @@ wp_print_styles();
 					<li>Material adicional, hojas de trabajo para tu plan de vida.</li>
 					<li>Una sesión personal con Fernando para evaluar tu GRAN MAPA.</li>
 				</ul>	
-				<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Comienza ahora</a>
-				<br class="d-xl-none d-block">
-				<span class="px-5">o</span>
-				<br class="d-xl-none d-block">
-				<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">Elige tu coach</a>
+				<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">COMIENZA AHORA Y ELIGE TU COACH</a>
 			</div>
 		<div class="col-md-6 bg-conferencia text-light px-0">
 			<div id="testimonios" class="py-5 px-3 h-100" style="background:rgba(0,0,0,0.5);">
