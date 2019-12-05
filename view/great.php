@@ -23,7 +23,6 @@ wp_print_styles();
 				</div>
 				<div class="text-center py-5 animated fadeIn">
 					<p class="pb-5">Estamos entrando en un paradigma de vida donde el mundo se transforma y cambia más rápido de lo que hemos conocido antes. Hoy mas que nunca, entender como es que operamos, y cómo salir de estados estancados para operar desde un máximo nivel de desempeño para avanzar hacia una vida extraordinaria. Bienvenido a tu próximo nivel, bienvenido a GREAT Coaching.</p>
-					<br class="d-lg-none d-block">
 					<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">COMIENZA AHORA Y ELIGE TU COACH</a>
 				</div>
 			</div>
@@ -55,15 +54,12 @@ wp_print_styles();
 </section>
 <section id="s4" class="py-5 city-lights text-light text-center">
 	<div class="container">
-		<div class="row">
+		<div class="row justify-content-center">
 			<div class="col-md-12 pb-5">
 				<h1 class="text-light">AHORA QUE CONOCES TU CREENCIA LIMITANTE</h1>
 				<h2 class="text-light">Elige un GRAN Coach y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
 			</div>
-			<div class="col-md-5 pb-md-0 pb-5">
-				<img src="<?php echo plugins_url().'/Great/public/img/equipo.webp'; ?>" alt="Equipo"  data-aos="fade-zoom-in" data-aos-duration="1500">
-			</div>
-			<div class="col-md-7" >
+			<div class="col-md-8" >
 				<p>Los GREAT™ Coaches. Son Coaches formados por ILC Academy entre los cuales están nuestras ECoaches Senior y nuestros GREAT™ Coach Trainers. Elige el que deseas y pauta tu primera conversación, tu primera sesión de Coaching orientado a lograr los resultados que deseas.</p>
 			</div>
 		</div>
@@ -78,7 +74,7 @@ wp_print_styles();
 		<div class="col-md-8"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			<!-- Hook de booked -->
 			<?php 
-				echo do_shortcode('[bookly-form category_id="0" service_id="1" hide="categories"]');
+				echo do_shortcode('[bookly-form category_id="1" service_id="1" hide="categories,week_days"]');
 			?>
 			<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary m-5 btn-lg rounded-pill text-light shadow" rel="nofollow noopener noreferrer">TE INVITAMOS A VER LAS PRIMERAS DOS VIDEO LECCIONES</a>
 		</div>
