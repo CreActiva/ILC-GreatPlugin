@@ -15210,3 +15210,6 @@ a.carousel-control-prev {
     -webkit-box-orient: vertical;
     cursor:pointer;
 }
+.text-truncate-show{
+    -webkit-line-clamp: 20;
+}

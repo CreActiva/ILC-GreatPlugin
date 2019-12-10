@@ -203,6 +203,14 @@ var coachesHtml = `
 </div>`; 
 $('#coach-section').append(coachesHtml);
 $('.text-truncate-up').click(function(){
-	$(this).css({'cssText':'-webkit-line-clamp:20 !important'})
+	$(this).css({'cssText':'-webkit-line-clamp:20'});
+	$(this).addClass('text-truncate-down');
+	$(this).removeClass('text-truncate-show');
+});
+
+$('.text-truncate-show').click(function(){
+	$(this).css({'cssText':'-webkit-line-clamp:3'});
+	$(this).removeClass('text-truncate-down');
+	$(this).addClass('text-truncate-up');
 });
 }( jQuery ) );
