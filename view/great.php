@@ -32,7 +32,7 @@ wp_print_styles();
 <section id="s2" class="container py-5">
 	<div class="row text-center">
 		<div class="col-md-12 pb-5">
-			<h1 class="font-italic text-center programa"  data-aos="fade-zoom-in" data-aos-duration="1500">Estrategia, Pasión, Relación, Acción, Transformación</h1>
+			<h1 class="font-italic text-center programa"  data-aos="fade-zoom-in"   data-aos-duration="1500">Estrategia, Pasión, Relación, Acción, Transformación</h1>
 		</div>
 		<div class="col-md-7 pb-md-0 pb-5">
 			<img src="<?php echo plugins_url().'/Great/public/img/mockup.webp'; ?>" alt="Mockup" data-aos="fade-zoom-in" data-aos-duration="1500">
@@ -59,7 +59,10 @@ wp_print_styles();
 				<h1 class="text-light">AHORA QUE CONOCES TU CREENCIA LIMITANTE</h1>
 				<h2 class="text-light">Elige un GRAN Coach y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
 			</div>
-			<div class="col-md-8" >
+			<div class="col-md-5 order-md-2 order-3 pb-3" id="coach-section">
+				<!-- Aquí el carrousel -->
+			</div>
+			<div class="col-md-7 order-md-3 order-2 align-self-center pb-3" >
 				<p>Los GREAT™ Coaches. Son Coaches formados por ILC Academy entre los cuales están nuestras ECoaches Senior y nuestros GREAT™ Coach Trainers. Elige el que deseas y pauta tu primera conversación, tu primera sesión de Coaching orientado a lograr los resultados que deseas.</p>
 			</div>
 		</div>
@@ -74,7 +77,7 @@ wp_print_styles();
 		<div class="col-md-8"  data-aos="fade-zoom-in" data-aos-duration="1500">
 			<!-- Hook de booked -->
 			<?php 
-				echo do_shortcode('[bookly-form category_id="1" service_id="1" hide="categories,week_days"]');
+				echo do_shortcode('[bookly-form category_id="1" service_id="1" hide="categories,week_days,time_range"]');
 			?>
 			<a href="https://ilccampus.com/unit/mod-great-1/?id=155819" class="btn btn-primary m-5 btn-lg rounded-pill text-light shadow" rel="nofollow noopener noreferrer">TE INVITAMOS A VER LAS PRIMERAS DOS VIDEO LECCIONES</a>
 		</div>

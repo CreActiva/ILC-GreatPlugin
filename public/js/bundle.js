@@ -146,8 +146,59 @@ $('#testimonioModal').on('hidden.bs.modal', function () {
 $('#testimonioModal').on('hidden.bs.modal', function () {
     $(".modal-body .embed-responsive").html(``);
 });
-// $('#modal-cerrar').click(function(){
-// 	$('#testimonioModal').modal('hide');
-// });
+$('#testimonioModal').on('shown.bs.modal', function () {
+	$('#modal-close').css({'cssText':'padding-right: 0 !important'})
+});
 /*==============*/
+
+
+/*Carrousel de coaches*/
+var coaches = [
+    { imagen: `${pluginUrl}/img/200/elizabeth-caceres.webp`, nombre: 'Elizabeth Cáceres', content: 'Permíteme  acompañarte en tu proceso de crecimiento, para superar tus límites, incrementar tu liderazgo, tomar acciones y construir una vida extraordinaria.  Celebro tu decisión de ser una mejor versión de ti. Creer en ti, todo lo hace posible' }, 
+    { imagen: `${pluginUrl}/img/200/irismar-camacho.webp`, nombre: 'Irismar Camacho', content: 'La vida es un viaje de descubrimientos. El coaching me conectó a mis recursos y activó mi pasión para acompañar a otros a conseguir los suyos' },
+    { imagen: `${pluginUrl}/img/200/jacqueline-contreras-bravo.webp`, nombre: 'Jacqueline Contreras Bravo', content: 'Hola Quiero invitarte a que te regales un tiempo para ti , que te permitas vivir un proceso de transformación “DESARROLLA TU MEJOR VERSIÓN” El coaching es una excelente herramienta para conseguirlo. Te espero' }, 
+    { imagen: `${pluginUrl}/img/200/marcelo-jaure.webp`, nombre: 'Marcelo Jaure', content: 'Ya tomaste la decisión!!  ahora disfruta el camino de dar el paso a tu próximo nivel. Será un honor acompañarte' }, 
+];
+var l = coaches.length;
+var coachesHtml = `
+<div id="coaches" class="carousel slide" data-pause> 
+    <div class="carousel-inner">`; 
+    coachesHtml += `
+        <div class="carousel-item active"> 
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10"> 
+                        <img src="${coaches[0].imagen}" alt="${coaches[0].nombre} Coach" class="img-fluid rounded-circle mx-auto mb-3 cursor-pointer">
+                        <h2 class="text-light">${coaches[0].nombre}</h2>
+                        <p class="pTestimonio">${coaches[0].content}</p>
+                    </div>
+                </div>
+            </div>
+        </div>`; 
+        for (var i = 1; i <= l-1; i++) { 
+            coachesHtml += `
+        <div class="carousel-item "> 
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10"> 
+                        <img src="${coaches[i].imagen}" alt="${coaches[i].nombre} Coach" class="img-fluid rounded-circle mx-auto mb-3 cursor-pointer">
+                        <h2 class="text-light">${coaches[i].nombre}</h2>
+                        <p class="pTestimonio">${coaches[i].content}</p>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+        } 
+        coachesHtml += ` 
+    </div>
+    <a style="left:-25px;" class="carousel-control-prev" href="#coaches" role="button" data-slide="prev"> 
+        <span style="filter: invert(0%);" class="carousel-control-prev-icon" aria-hidden="true"></span> 
+        <span class="sr-only">Previous</span> 
+    </a> 
+    <a style="right:-25px;" class="carousel-control-next" href="#coaches" role="button" data-slide="next"> 
+        <span style="filter: invert(0%);" class="carousel-control-next-icon" aria-hidden="true"></span> 
+        <span class="sr-only">Next</span> 
+    </a>
+</div>`; 
+$('#coach-section').append(coachesHtml);
 }( jQuery ) );
