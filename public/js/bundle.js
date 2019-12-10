@@ -158,6 +158,7 @@ var coaches = [
     { imagen: `${pluginUrl}/img/200/irismar-camacho.webp`, nombre: 'Irismar Camacho', content: 'La vida es un viaje de descubrimientos. El coaching me conectó a mis recursos y activó mi pasión para acompañar a otros a conseguir los suyos' },
     { imagen: `${pluginUrl}/img/200/jacqueline-contreras-bravo.webp`, nombre: 'Jacqueline Contreras Bravo', content: 'Hola Quiero invitarte a que te regales un tiempo para ti , que te permitas vivir un proceso de transformación “DESARROLLA TU MEJOR VERSIÓN” El coaching es una excelente herramienta para conseguirlo. Te espero' }, 
     { imagen: `${pluginUrl}/img/200/marcelo-jaure.webp`, nombre: 'Marcelo Jaure', content: 'Ya tomaste la decisión!!  ahora disfruta el camino de dar el paso a tu próximo nivel. Será un honor acompañarte' }, 
+    { imagen: `${pluginUrl}/img/200/danilo-boscan-silva.webp`, nombre: 'Danilo Boscan Silva', content: 'Para <b>crear</b> hay que <b>creer</b>; la diferencia está en la “A” de Actitud. Reentrena 100% tu potencial, desatando tu freno paralizante y alcanzarás tus Sueños. Contáctame, ve por más' },
 ];
 var l = coaches.length;
 var coachesHtml = `
@@ -168,9 +169,9 @@ var coachesHtml = `
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10"> 
-                        <img src="${coaches[0].imagen}" alt="${coaches[0].nombre} Coach" class="img-fluid rounded-circle mx-auto mb-3 cursor-pointer">
+                        <img src="${coaches[0].imagen}" alt="${coaches[0].nombre} Coach" class="img-fluid rounded-circle mx-auto mb-3">
                         <h2 class="text-light">${coaches[0].nombre}</h2>
-                        <p class="pTestimonio">${coaches[0].content}</p>
+                        <p class="pTestimonio text-truncate-up">${coaches[0].content}</p>
                     </div>
                 </div>
             </div>
@@ -181,9 +182,9 @@ var coachesHtml = `
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10"> 
-                        <img src="${coaches[i].imagen}" alt="${coaches[i].nombre} Coach" class="img-fluid rounded-circle mx-auto mb-3 cursor-pointer">
+                        <img src="${coaches[i].imagen}" alt="${coaches[i].nombre} Coach" class="img-fluid rounded-circle mx-auto mb-3">
                         <h2 class="text-light">${coaches[i].nombre}</h2>
-                        <p class="pTestimonio">${coaches[i].content}</p>
+                        <p class="pTestimonio text-truncate-up">${coaches[i].content}</p>
                     </div>
                 </div>
             </div>
@@ -201,4 +202,7 @@ var coachesHtml = `
     </a>
 </div>`; 
 $('#coach-section').append(coachesHtml);
+$('.text-truncate-up').click(function(){
+	$(this).css({'cssText':'-webkit-line-clamp:20 !important'})
+});
 }( jQuery ) );

@@ -59,10 +59,10 @@ wp_print_styles();
 				<h1 class="text-light">AHORA QUE CONOCES TU CREENCIA LIMITANTE</h1>
 				<h2 class="text-light">Elige un GRAN Coach y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
 			</div>
-			<div class="col-md-5 order-md-2 order-3 pb-3" id="coach-section">
+			<div class="col-md-5 order-md-2 order-3 pb-5" id="coach-section">
 				<!-- Aquí el carrousel -->
 			</div>
-			<div class="col-md-7 order-md-3 order-2 align-self-center pb-3" >
+			<div class="col-md-7 order-md-3 order-2 pt-md-5 pt-0 pb-5" >
 				<p>Los GREAT™ Coaches. Son Coaches formados por ILC Academy entre los cuales están nuestras ECoaches Senior y nuestros GREAT™ Coach Trainers. Elige el que deseas y pauta tu primera conversación, tu primera sesión de Coaching orientado a lograr los resultados que deseas.</p>
 			</div>
 		</div>

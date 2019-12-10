@@ -15200,6 +15200,13 @@ a.carousel-control-prev {
         }
     }
 }
-#s5{
+/*#s5{
     padding-bottom: 13rem !important;
+}*/
+.text-truncate-up{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    cursor:pointer;
 }
