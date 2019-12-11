@@ -4,12 +4,12 @@
 var pluginUrl = 'https://ilccampus.com/wp-content/plugins/Great/public/';
 /*Carrousel de videos*/
 var sliderInfo = [
-    { imgSrc: `${pluginUrl}img/videos/video1.webp`, img: 'Video 1', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
-    { imgSrc: `${pluginUrl}img/videos/video2.webp`, img: 'Video 2', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
+    { imgSrc: `${pluginUrl}img/videos/video1.webp`, img: 'Video 1', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que es lo que realmente quieres, donde estás en relación a donde DESEAS llegar. Este es el comienzo de un viaje, y tú nunca tomas un viaje, el viaje te toma a ti.'},
+    { imgSrc: `${pluginUrl}img/videos/video2.webp`, img: 'Video 2', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse al darte cuenta, y contestar la pregunta. ¿Qué es lo que te impide avanzar?,después de haber explorado en profundidad tu máxima aspiración en la G. Desde allí seguiremos en nuestro viaje.'},
     { imgSrc: `${pluginUrl}img/videos/video3.webp`, img: 'Video 3', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
-    { imgSrc: `${pluginUrl}img/videos/video4.webp`, img: 'Video 4', content:'Comenzamos el camino de GREAT™ Coaching explorando la G, que és lo que realmente deseas, donde estás en relación a donde DESEAS Lograr. Este es el comienzo de un viaje, y tu nunca tomas un viaje, el viaje te toma a ti.'},
-    { imgSrc: `${pluginUrl}img/videos/video5.webp`, img: 'Video 5', content:'<b>¿Qué es GREAT™ Coaching?</b> Una conversación para comprender lo importante de enfocarse a darte cuenta, y contestar la pregunta, después de haber explorado en profundidad tu máxima aspiración en la G.  ¿Que es lo que te impide avanzar? Desde allí seguiremos en nuestro viaje.'},
-    { imgSrc: `${pluginUrl}img/videos/video6.webp`, img: 'Video 6', content:'Explorando la R de GREAT, todo lo que te pueda estar sucediendo es exactamente lo que te tiene que pasar. Cualquier comportamiento o emoción que consideras limitante, persigue SIEMPRE una intención positiva. Date cuenta de tu potencialidad pura. Comienza el viaje hacia adentro.'},
+    { imgSrc: `${pluginUrl}img/videos/video4.webp`, img: 'Video 4', content:'Conócete a ti mismo. Con los resultados de tu prueba de Arquetipos de Personalidad y el acompañamiento con sesiones de Coaching, podrás comenzar a explorar las creencias que limitan tu Poder Personal. Comienza el viaje hacia adentro.'},
+    { imgSrc: `${pluginUrl}img/videos/video5.webp`, img: 'Video 5', content:'Al seguir desmontando tus creencias limitantes lograrás hacer quirúrgicas posibilidades donde antes hayan barreras, podrás conectar con tu verdadero propósito y elevar tu nivel de energía para conectar con altos niveles de intención.'},
+    { imgSrc: `${pluginUrl}img/videos/video6.webp`, img: 'Video 6', content:'Junto a tu Coach podrás ahora establecer un plan de acción alineado completamente a tus Valores, Creencias, Reglas y Talentos para tener más opciones y conectar con una vida de Plenitud. Este es el proceso GREAT™ Coaching. Espero conocerte durante los webinars donde podré aclarar cualquier aspecto de tu crecimiento.'},
 ];
 
 var sliderDesktop=`
@@ -87,10 +87,10 @@ $('#responsiveCarrousel').append(sliderDesktop + sliderMovil);
 /*=========*/
 /*Carrousel de testimonios*/
 var testimonios = [
-    { video:'https://player.vimeo.com/video/353454359?color=4B314C', imagen: `${pluginUrl}/img/200/alejandro-perez.webp`, nombre: 'Alejandro Peréz Bolaños', content: 'Hola soy Alejandro Peréz Bolaños y quiero comentarte que tenemos una nueva certificación con ILC Academy tengo 20 años trabajando con esta escuela como coach, he pasado por muchas escuela y creo que en ILC Academy encuentras el equilibrio para formarte como un coach integral' }, 
     { video:'https://player.vimeo.com/video/220302740?color=4B314C', imagen: `${pluginUrl}/img/200/jeremias-alvarez.webp`, nombre: 'Jeremías Álvarez', content: 'Los felicito a todos ustedes por estar preparándose como nuevos colegas nuestros, coaches a través de ILC, con mi amigo Fernando Celis y María Alexandra Duque' },
-    { video:'https://player.vimeo.com/video/272383615?color=4B314C', imagen: `${pluginUrl}/img/200/damelys-naranjo.webp`, nombre: ' Damelys Naranjo', content: 'Hola soy Damelys Naranjo tuve la oportunidad y la satisfacción de disfrutar esta certificación de life coach es para mi gratificante porque es uno de mis mayores crecimiento dentro de todas las arias que me desempeño' }, 
-    { video:'https://player.vimeo.com/video/272380305?color=4B314C', imagen: `${pluginUrl}/img/200/ana-bolivar.webp`, nombre: 'Ana Bolívar', content: 'Mi nombre es Ana Bolívar y soy licenciada en relaciones industriales estoy aquí hoy día certificándome en Life coaching y en realidad esto me pareció una experiencia potenciadora que cualquier persona debería vivir' }, 
+    { video:'https://player.vimeo.com/video/353454359?color=4B314C', imagen: `${pluginUrl}/img/200/alejandro-perez.webp`, nombre: 'Alejandro Peréz Bolaños', content: 'Quiero comentarte que tenemos una nueva certificación con ILC Academy tengo 20 años trabajando como coach, he pasado por muchas escuela y creo que en ILC Academy encuentras el equilibrio para formarte como un coach integral' }, 
+    { video:'https://player.vimeo.com/video/272383615?color=4B314C', imagen: `${pluginUrl}/img/200/damelys-naranjo.webp`, nombre: ' Damelys Naranjo', content: 'Tuve la oportunidad y la satisfacción de disfrutar esta certificación de life coach es para mi gratificante porque es uno de mis mayores crecimiento dentro de todas las arias que me desempeño' }, 
+    { video:'https://player.vimeo.com/video/272380305?color=4B314C', imagen: `${pluginUrl}/img/200/ana-bolivar.webp`, nombre: 'Ana Bolívar', content: 'Soy licenciada en relaciones industriales estoy aquí hoy día certificándome en Life coaching y en realidad esto me pareció una experiencia potenciadora que cualquier persona debería vivir' }, 
 ]; 
 var testimoniosHtml = `
 <div id="carouselTestimonios" class="carousel slide" data-pause> 
@@ -154,11 +154,15 @@ $('#testimonioModal').on('shown.bs.modal', function () {
 
 /*Carrousel de coaches*/
 var coaches = [
-    { imagen: `${pluginUrl}/img/200/elizabeth-caceres.webp`, nombre: 'Elizabeth Cáceres', content: 'Permíteme  acompañarte en tu proceso de crecimiento, para superar tus límites, incrementar tu liderazgo, tomar acciones y construir una vida extraordinaria.  Celebro tu decisión de ser una mejor versión de ti. Creer en ti, todo lo hace posible' }, 
+    { imagen: `${pluginUrl}/img/200/andreina-rodriguez.webp`, nombre: 'Andreína Rodríguez', content: '¡Bienvenido! Si ya estás aquí es porque estás decidido a crear y lograr la vida que quieres. ¡Excelente noticia! ¡Será un placer acompañarte en tu historia de éxito! Comencemos' },
+    { imagen: `${pluginUrl}/img/200/elizabeth-caceres.webp`, nombre: 'Elizabeth Cáceres', content: 'Permíteme acompañarte en tu proceso de crecimiento, para superar tus límites, incrementar tu liderazgo, tomar acciones y construir una vida extraordinaria. Celebro tu decisión de ser una mejor versión de ti. Creer en ti, todo lo hace posible' }, 
     { imagen: `${pluginUrl}/img/200/irismar-camacho.webp`, nombre: 'Irismar Camacho', content: 'La vida es un viaje de descubrimientos. El coaching me conectó a mis recursos y activó mi pasión para acompañar a otros a conseguir los suyos' },
     { imagen: `${pluginUrl}/img/200/jacqueline-contreras-bravo.webp`, nombre: 'Jacqueline Contreras Bravo', content: 'Hola Quiero invitarte a que te regales un tiempo para ti , que te permitas vivir un proceso de transformación “DESARROLLA TU MEJOR VERSIÓN” El coaching es una excelente herramienta para conseguirlo. Te espero' }, 
-    { imagen: `${pluginUrl}/img/200/marcelo-jaure.webp`, nombre: 'Marcelo Jaure', content: 'Ya tomaste la decisión!!  ahora disfruta el camino de dar el paso a tu próximo nivel. Será un honor acompañarte' }, 
-    { imagen: `${pluginUrl}/img/200/danilo-boscan-silva.webp`, nombre: 'Danilo Boscan Silva', content: 'Para <b>crear</b> hay que <b>creer</b>; la diferencia está en la “A” de Actitud. Reentrena 100% tu potencial, desatando tu freno paralizante y alcanzarás tus Sueños. Contáctame, ve por más' },
+    { imagen: `${pluginUrl}/img/200/marcelo-jaure.webp`, nombre: 'Marcelo Jaure', content: '¡Ya tomaste la decisión! Ahora disfruta el camino de dar el paso a tu próximo nivel. Será un honor acompañarte' }, 
+    { imagen: `${pluginUrl}/img/200/danilo-boscan-silva.webp`, nombre: 'Danilo Boscan Silva', content: 'Para <b>crear</b> hay que <b>creer</b>; la diferencia está en la “A” de Actitud. Reentrena 100% tu potencial, desatando tu freno paralizante y alcanzarás tus Sueños. Contáctame, ve por más' },    
+    { imagen: `${pluginUrl}/img/200/pia-melo-cofre.webp`, nombre: 'Pía Melo Cofré', content: 'Soy una profesional de acompañar procesos de cambio y transformación para tu bienestar y plenitud. Di sí a la vida que sueñas y elige trabajar por ella, yo te acompaño' },    
+    { imagen: `${pluginUrl}/img/200/luisa-viso.webp`, nombre: 'Luisa Viso', content: 'Te invito a que hagas un viaje de tu mente al corazón para que explores el potencial que tú mismo tienes y saques lo mejor de ti' },    
+    { imagen: `${pluginUrl}/img/200/maria-loreto.webp`, nombre: 'María Loreto (Mariló) Lunter', content: 'Te invito que a través del coaching conozcamos juntos las claves que te llevarán a la total armonía de tu ser' },    
 ];
 var l = coaches.length;
 var coachesHtml = `
@@ -208,7 +212,7 @@ $('.text-truncate-up').click(function(){
 	$(this).removeClass('text-truncate-show');
 });
 
-$('.text-truncate-show').click(function(){
+$('.text-truncate-down').click(function(){
 	$(this).css({'cssText':'-webkit-line-clamp:3'});
 	$(this).removeClass('text-truncate-down');
 	$(this).addClass('text-truncate-up');

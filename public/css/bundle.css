@@ -15210,6 +15210,13 @@ a.carousel-control-prev {
     -webkit-box-orient: vertical;
     cursor:pointer;
 }
-.text-truncate-show{
-    -webkit-line-clamp: 20;
+
+#coach-section {
+    height: 70vh;
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 991.98px){
+    #coach-section{
+        height: 90vh;
+    }
 }

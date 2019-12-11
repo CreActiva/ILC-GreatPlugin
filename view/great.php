@@ -22,7 +22,7 @@ wp_print_styles();
 					<iframe rel="nofollow noopener noreferrer" class="embed-responsive-item animated fadeIn shadow-lg p-3" src="https://player.vimeo.com/video/297692738?color=4b314c&title=0&byline=0&portrait=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Great"></iframe>		
 				</div>
 				<div class="text-center py-5 animated fadeIn">
-					<p class="pb-5">Estamos entrando en un paradigma de vida donde el mundo se transforma y cambia más rápido de lo que hemos conocido antes. Hoy mas que nunca, entender como es que operamos, y cómo salir de estados estancados para operar desde un máximo nivel de desempeño para avanzar hacia una vida extraordinaria. Bienvenido a tu próximo nivel, bienvenido a GREAT Coaching.</p>
+					<p class="pb-5">Estamos entrando en un paradigma de vida donde el mundo se transforma y cambia más rápido de lo que hemos conocido antes. Hoy más que nunca, entender cómo es que operamos, y cómo salir de estados estancados para operar desde un máximo nivel de desempeño para avanzar hacia una vida extraordinaria. Bienvenido a tu próximo nivel, bienvenido a GREAT Coaching.</p>
 					<a href="#s5" class="btn btn-primary btn-lg rounded-pill text-light shadow-lg" rel="nofollow noopener noreferrer">COMIENZA AHORA Y ELIGE TU COACH</a>
 				</div>
 			</div>
@@ -47,7 +47,7 @@ wp_print_styles();
 	<div class="container" id="responsiveCarrousel">
 		<div class="row justify-content-center">
 			<div class="col-md-12" data-aos="fade-zoom-in" data-aos-duration="1500"><h1 class="text-primary">GREAT™ Coaching </h1><h2 class="text-primary">5 Espacios para Desatar tu Poder Personal</h2></div>
-			<div class="col-md-8 pb-5" data-aos="fade-zoom-in" data-aos-duration="1500">Durante 6 Video Lecciones, 2 Webinars en Vivo con Fernando Celis, Master Life Coach Trainer y  creador  del  Modelo  GREAT™  Coaching,  podrás  tener  una  visión  mas  clara  de  quién  eres, conocerte mejor y comenzar a esbozar el Resultado Deseado conectado a propósitos que vibran con   tu   verdadera   naturaleza. Tu compromiso se ve fortalecido al decidir tener un acompañamiento personal VIP con un GREAT™ Coach.</h2>
+			<div class="col-md-8 pb-5" data-aos="fade-zoom-in" data-aos-duration="1500">Durante 6 Video Lecciones, 2 Webinars en Vivo con Fernando Celis, Master Life Coach Trainer y  creador  del  Modelo  GREAT™  Coaching,  podrás  tener  una  visión  más  clara  de  quién  eres, conocerte mejor y comenzar a esbozar el Resultado Deseado conectado a propósitos que vibran con   tu   verdadera   naturaleza. Tu compromiso se ve fortalecido al decidir tener un acompañamiento personal VIP con un GREAT™ Coach.</h2>
 		</div>
 		<!-- En Js Se está añadiendo aquí el carrousel de videos de great -->
 	</div>
@@ -57,13 +57,13 @@ wp_print_styles();
 		<div class="row justify-content-center">
 			<div class="col-md-12 pb-5">
 				<h1 class="text-light">AHORA QUE CONOCES TU CREENCIA LIMITANTE</h1>
-				<h2 class="text-light">Elige un GRAN Coach y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
+				<h2 class="text-light">Elige un GRAN entrenador y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
 			</div>
 			<div class="col-md-5 order-md-2 order-3 pb-5" id="coach-section">
 				<!-- Aquí el carrousel -->
 			</div>
-			<div class="col-md-7 order-md-3 order-2 pt-md-5 pt-0 pb-5" >
-				<p>Los GREAT™ Coaches. Son Coaches formados por ILC Academy entre los cuales están nuestras ECoaches Senior y nuestros GREAT™ Coach Trainers. Elige el que deseas y pauta tu primera conversación, tu primera sesión de Coaching orientado a lograr los resultados que deseas.</p>
+			<div class="col-md-7 order-md-3 order-2 pt-0 pb-5 align-self-center" >
+				<h2 class="text-light">Los GREAT™ Coaches. Son Coaches formados por ILC Academy entre los cuales están nuestras ECoaches Senior y nuestros GREAT™ Coach Trainers. Elige el que deseas y pauta tu primera conversación, tu primera sesión de Coaching orientado a lograr los resultados que deseas.</h2>
 			</div>
 		</div>
 
@@ -88,7 +88,7 @@ wp_print_styles();
 		<div class="row">
 			<div class="col-md-9 align-self-center">
 				<h1 class="fernando font-italic text-light" data-aos="fade-zoom-in" data-aos-duration="1500">Master Life Coach Trainer, CMC y CEO de ILC Academy Worldwide</h1><br class="d-md-block d-none"><br class="d-md-block d-none">
-				<p>Durante los últimos 25 años Fernando Celis, Surfista de Alma y Master Life Coach se ha dedicado a estudiar a fondo y aplicar los elementos que producen resultados para sacar el máximo de su Poder Personal. En ese viaje pudo diseñar una metodología de Coaching que dio a la luz ILC Academy, desde las calles de Caracas, y junto a Samuel González y María Alexandra Duque construyeron una Escuela de Pensamiento de Coaching que une puentes, desata las manos y logra entrar a un nivel mas profundo a los detonantes que liberan el Poder Humano para producir cambios sustentables en el tiempo.<br>Hoy Fernando forma parte del BOG de la IAC International Association of Coaching, es Certified Masteries Coach de la IAC y ha llevado Coaching a un nivel Profesional con las alianzas universitarias entre ellas la Florida Global University en Miami, donde hoy vive.
+				<p>Durante los últimos 25 años Fernando Celis, Surfista de Alma y Master Life Coach se ha dedicado a estudiar a fondo y aplicar los elementos que producen resultados para sacar el máximo de su Poder Personal. En ese viaje pudo diseñar una metodología de Coaching que dio a la luz ILC Academy, desde las calles de Caracas, y junto a Samuel González y María Alexandra Duque construyeron una Escuela de Pensamiento de Coaching que une puentes, desata las manos y logra entrar a un nivel más profundo a los detonantes que liberan el Poder Humano para producir cambios sustentables en el tiempo.<br>Hoy Fernando forma parte del BOG de la IAC International Association of Coaching, es Certified Masteries Coach de la IAC y ha llevado Coaching a un nivel Profesional con las alianzas universitarias entre ellas la Florida Global University en Miami, donde hoy vive.
 				</p>
 			</div>
 			<div class="col-md-3">
