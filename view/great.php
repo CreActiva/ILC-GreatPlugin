@@ -57,7 +57,7 @@ wp_print_styles();
 		<div class="row justify-content-center">
 			<div class="col-md-12 pb-5">
 				<h1 class="text-light">AHORA QUE CONOCES TU CREENCIA LIMITANTE</h1>
-				<h2 class="text-light">Elige un GRAN entrenador y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
+				<h2 class="text-light">Elige un GREAT Coach y resuelve de una vez ese Conflicto Estructural que te separa de tu Grandeza y continúa el viaje con los videos de Fernando Celis y los 2 Webinars.</h2>
 			</div>
 			<div class="col-md-5 order-md-2 order-3 pb-5" id="coach-section">
 				<!-- Aquí el carrousel -->

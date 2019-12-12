@@ -163,6 +163,8 @@ var coaches = [
     { imagen: `${pluginUrl}/img/200/pia-melo-cofre.webp`, nombre: 'Pía Melo Cofré', content: 'Soy una profesional de acompañar procesos de cambio y transformación para tu bienestar y plenitud. Di sí a la vida que sueñas y elige trabajar por ella, yo te acompaño' },    
     { imagen: `${pluginUrl}/img/200/luisa-viso.webp`, nombre: 'Luisa Viso', content: 'Te invito a que hagas un viaje de tu mente al corazón para que explores el potencial que tú mismo tienes y saques lo mejor de ti' },    
     { imagen: `${pluginUrl}/img/200/maria-loreto.webp`, nombre: 'María Loreto (Mariló) Lunter', content: 'Te invito que a través del coaching conozcamos juntos las claves que te llevarán a la total armonía de tu ser' },    
+    { imagen: `${pluginUrl}/img/200/mauricio-sobral.webp`, nombre: 'Mauricio Sobral', content: 'Te acompaño a lograr tus metas, con una premisa. Disfrutar el camino. Si tu HOY no te conforma. CONFIÁ. Siempre hay otra forma de encarar la cuestión. La Transformacion existe' },    
+    { imagen: `${pluginUrl}/img/200/carlos-fernandez.webp`, nombre: 'Carlos Fernández', content: 'Mi preparación es mi compromiso para ofrecerte el mejor compañero en este caminar de la vida.  Sería un honor, con mucho amor, ayudarte a descubrir una mejor versión de ti' },    
 ];
 var l = coaches.length;
 var coachesHtml = `
