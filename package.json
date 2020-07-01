@@ -1,0 +1,20 @@
+{
+  "name": "ILC-GreatPlugin",
+  "version": "1.0.0",
+  "description": "\"Great Plugin\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "git add -A && git commit -m\"Actualizando cambios\" && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreActiva/ILC-GreatPlugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreActiva/ILC-GreatPlugin/issues"
+  },
+  "homepage": "https://github.com/CreActiva/ILC-GreatPlugin#readme"
+}
